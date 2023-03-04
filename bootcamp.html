@@ -1,4 +1,12 @@
-/*Importação de fonte*/
+<!DOCTYPE html>
+<html lang="pt - br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootcamp dnc</title>
+    <style>
+    /*Importação de fonte*/
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 :root{
@@ -18,7 +26,7 @@ body{
 /*menu de navegação principal*/
 #principal{
     width: 100%;
-    height: 100px;
+    height: 100%;
     border: 1px solid black;
     background-color: #303030;
     display: flex;
@@ -149,162 +157,67 @@ body{
             box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
             cursor: pointer;
         }
+        </style>
+</head>
+<body>
+    <nav id="principal">
+        <div id="menu">
+            <a href="">Home</a>
+            <a href="">Ultimas Edições</a>
+            <a href="">Requisitos para participar</a>
+        </div>
+        <button>Login</button>
+    </nav>
+    
+    <section>
+          <header>
+               <h1>Bootcamp dnc</h1>
+               <h2>
+               Esse será um evento exclusivo para todos os alunos
+               <br>da <b>DNC</b>, que querem <span class="invert">acelerar a carreira</span> com uma 
+               <br>semana intensiva de conteúdo de mercado entre
+               <br><span class="invert">BACK-END, FRONT-END & BANCO DE DADOS.</span>
+          </h2>
+          </header> 
+          <form>
+               <div class="form-grupo">
+                    <label>Nome:</label>
+                    <input type="text" placeholder="Insira seu nome aqui">
+               </div>
+               <div class="form-grupo">
+                    <label>Sobrenome:</label>
+                    <input type="text" placeholder="Insira seu sobrenome aqui">
+               </div>
+               </div>
+               <div class="form-grupo">
+                    <label>Área de Interesse:</label>
+                    <div class="checkbox-itens">
+                         <input type="checkbox" value="front">
+                         <label>Front-end</label>
 
-        /*  footer  */
+                         <input type="checkbox" value="back">
+                         <label>back-end</label>
 
-       
-        footer{
-            width:100%;
-            background-color:var(--azul-dnc);
-        }
-
-        footer .linha1{
-            display:flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        footer ul{
-            list-style: none;
-            margin:0px;
-            padding:0px;        
-            
-        }
-
-        footer nav{
-            display:flex;
-            flex-direction: column;
-            align-items: center;
-
-            height: 330px;
-        }
-
-        footer h5{
-            text-align: center;
-            color:white;
-            font-weight: 800;
-            font-size: 18px;
-            font-family: var(--fonte-padrao);            
-            background-color: var(--preto-dnc);
-            border-radius: 10px;
-
-            padding:10px 10px 10px 10px;
-            margin-bottom:15px;
-        }
-
-        footer ul li{            
-            text-align: center;
-            color:white;
-            font-weight: 600;
-            font-size: 18px;  
-            font-family: var(--fonte-padrao);
-
-            margin:20px 0px 20px 0px;
-        }
-
-        footer ul li a{
-            color:white;
-            text-decoration: none;
-        }
-
-        footer ul li a:hover{
-            color:var(--cinza-hover);
-        }
-
-        footer .endereco{
-            font-weight: 600;
-            font-size: 18px;  
-            font-family: var(--fonte-padrao);
-            color:white;
-            text-align: center;
-            width:20%;
-        }
-
-        footer .linha2{
-            height:35px;
-            display:flex;
-            justify-content: center;
-            margin:0px;
-            padding:10px
-        }
-
-        footer .linha2 a{
-            font-family: var(--fonte-padrao);
-            font-size: 18px;
-            font-weight: 600;
-            color:white;
-            text-decoration: none;
-            padding:5px;            
-        }
-
-        footer .linha2 a:first-child{
-            border-right: 3px solid white;
-        }
-
-        footer .linha2 a:hover{
-            color:var(--cinza-hover);
-        }
-
-@media only screen and (max-width: 600px){
-
-    /* Menu */
-    #principal{        
-        flex-direction: column;
-        height:auto;
-    }
-
-    #menu{
-        flex-direction: column;
-        width:100%;   
-        margin:0px;     
-        
-    }
-
-    #menu a{
-        display:flex;
-        align-items: center;
-        height:50px;      
-        
-    }
-
-    #principal button{
-        width:100%;
-        margin:0px;
-    }
-
-    /* Section */
-
-    section h1{
-        font-size:38px;
-    }
-
-    section h2{
-        font-size:28px;
-        padding-right:15px;
-        padding-left:15px;
-    }
-
-    form{
-        width: 95%;
-        font-size:20px
-    }
-
-    .checkbox-itens label{
-        font-size:17px;
-    }
-
-    /* Footer */
-
-    footer .linha1{
-        flex-direction: column;
-    }
-
-    footer .endereco{
-        width:95%;
-        margin-bottom: 20px;
-    }
-
-
-
-
-}
+                         <input type="checkbox" value="Banco de Dados">
+                         <label>Banco de Dados</label>
+                    </div>
+               </div>
+               <div class="form-grupo">
+                    <label>E-mail:</label>
+                    <input type="email" placeholder="Insira seu e-mail aqui">
+               </div>
+               <div class="form-grupo">
+                    <label>Telefone:</label>
+                    <input type="text" placeholder=(99)99999-9999>
+               </div>
+               <div class="form-grupo">
+                    <label>Insira uma frase criativa:</label>
+                    <input type="text" placeholder="Qual frase criativa você gostaria de falar?">
+               </div>
+               <input type="submit" value="Cadastrar">
+          </form>
+    </section>
+    
+</div>
+</body>
+</html>
